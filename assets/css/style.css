@@ -19,14 +19,9 @@ h3{
 .sub-heading{
     color:var(--highlight-color);
 }
-/* 
-.container,
-.row{
-border: 2px solid black;
+#navbar{
+    background-color:var(--primary-color);
 }
-.col-12{
-    border:2px: solid white;
-    background-color: lightgray;
+#navbar .logo{
+    width: 30px;
 }
-
-*?
