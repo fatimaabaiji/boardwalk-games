@@ -19,12 +19,14 @@ h3{
 .sub-heading{
     color:var(--highlight-color);
 }
-
+/* 
 .container,
 .row{
-    border:2px solid black;
-    gap:2px;
+border: 2px solid black;
 }
 .col-12{
+    border:2px: solid white;
     background-color: lightgray;
 }
+
+*?
