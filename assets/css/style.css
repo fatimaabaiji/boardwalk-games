@@ -1,6 +1,6 @@
-body {
-    font-family: 'Inter', sans-serif;
-}
-h1 {
-    font-family: 'Macondo', cursive;
+
+:root{
+    --primarly-font:"Inter", sans-serif;
+    --secondary-font:"Macondo", cursive;
+    --primary-color: #416a8e;
 }
