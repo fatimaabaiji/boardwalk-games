@@ -2,5 +2,29 @@
 :root{
     --primarly-font:"Inter", sans-serif;
     --secondary-font:"Macondo", cursive;
-    --primary-color: #416a8e;
+    --primary-color: #3a2620;
+    --secondary-color:#aa9581;
+    --highlight-color:#416a8e;
+    --light-highlight-color:#7a9fc2;
+}
+body {
+    font-family: var(--primarly-font);
+}
+h1,
+h2,
+h3{
+    font-family: var(--secondary-font);
+    color:var(--primary-color)
+}
+.sub-heading{
+    color:var(--highlight-color);
+}
+
+.container,
+.row{
+    border:2px solid black;
+    gap:2px;
+}
+.col-12{
+    background-color: lightgray;
 }
