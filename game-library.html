@@ -46,7 +46,7 @@
                         <a class="nav-link active" aria-current="page" href="game-library.html">Games</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="index.html#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -219,17 +219,67 @@
 
     <!-- footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
-    <footer class="mt-auto">
-        <div class="container">
+    <footer id="contact" class="mt-auto">
+        <div class="container section">
             <div class="row justify-content-center">
-                <div class="col-12">Contact section heading</div>
+                <div class="col-12 text-center">Contact us</div>
                 <!-- contact info -->
-                <div class="col-12 col-md-6 col-xl-4">Contact info & social links</div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h3 class="sub-heading-color">Contact info</h3>
+                    <address>
+                        <strong> <i class="fas fa-map-marker-alt"></i> Boradwalk Game</strong><br>
+                        123 boardwalk <br>
+                        boardwalk city, 12345
+                    </address>
+                    <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
+                        <i class="fa-regular fa-paper-plane"></i> info@boardwalk-games.co
+                    </p>
+
+                    <div class="social-links my-4">
+                        <a href="https://www.facebook.com" aria-label="Follow us on Facebook (opens in a new tab)" target="_blank" alt="Follow us on Facebook" rel="oopener"><i class="fa-brands fa-square-facebook"></i></i></a> 
+                        <a href="https://www.twitter.com" aria-label="Follow us on Twitter (opens in a new tab)" target="_blank" alt="Follow us on X" rel="oopener"><i class="fa-brands fa-x-twitter"></i></a> 
+                        <a href="https://www.instagram.com" aria-label="Follow us on Instagram (opens in a new tab)" target="_blank" alt="Follow us on Instagram" rel="oopener"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
                 <!-- opening times -->
-                <div class="col-12 col-md-6 col-xl-4">Opening times</div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <h3 class="sub-heading-color">Opening times</h3>
+                  <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Open</th>
+                            <th scope="col">Close</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mon</th>
+                            <td colspan="2">Closed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tue - Thur</th>
+                            <td>11am</td>
+                            <td>11pm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fri - Sat</th>
+                            <td>11am</td>
+                            <td>12am</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sun</th>
+                            <td>12pm</td>
+                            <td>7pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+                  </table>
+                </div>
             </div>
         </div>
     </footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
