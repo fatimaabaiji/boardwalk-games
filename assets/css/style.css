@@ -137,8 +137,25 @@ h2 {
 #contact .table-dark * {
     background-color: transparent;
 }
+/*
+/*event*/
+ul ,li {
+    list-style-type:none;
+}
+#background-color{
+    background-color:white;
+    color: var(--highlight-color-light);
+}
+#background-color:hover{
+    background-color: var(--highlight-color);
+    color: white;
+}
 
-/* grid visualisation CSS for testing */
+#discount-button{
+    padding: 5px;
+}
+
+
 
 /* .container,
 .row {
@@ -181,5 +198,29 @@ h2 {
     /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
+    }
+}
+
+
+/*event*/
+/*tablets devices and up*/
+@media screen and (min-width:768px){
+
+    #event{
+        min-height: 400px;
+    }
+}
+/*large devices and up*/
+@media screen and (min-width:1200px){
+
+    #event{
+        min-height: 220px;
+    }
+}
+/*extra large devices and up*/
+@media screen and (min-width:1400px){
+
+    #event{
+        min-height:195px;
     }
 }
