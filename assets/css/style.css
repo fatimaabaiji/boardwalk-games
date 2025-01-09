@@ -15,6 +15,7 @@
 
 body {
     font-family: var(--primary-font);
+    padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
 }
 
 h1,
@@ -38,8 +39,7 @@ h2 {
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 4rem; /* prevent navbar overlap */
 }
 
 /* Buttons */
@@ -95,6 +95,26 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Events */
+
+#events .table {
+    /* events table font size small enough that 
+      the table doesn't overflow on xs screens. 
+      Size set back to 1rem in a media query 
+      for sm screens and up */
+    font-size: 0.7rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    color: white;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
 /* Game library cards */
 
 #new-games .card,
@@ -137,25 +157,8 @@ h2 {
 #contact .table-dark * {
     background-color: transparent;
 }
-/*
-/*event*/
-ul ,li {
-    list-style-type:none;
-}
-#background-color{
-    background-color:white;
-    color: var(--highlight-color-light);
-}
-#background-color:hover{
-    background-color: var(--highlight-color);
-    color: white;
-}
 
-#discount-button{
-    padding: 5px;
-}
-
-
+/* grid visualisation CSS for testing */
 
 /* .container,
 .row {
@@ -168,6 +171,17 @@ ul ,li {
 } */
 
 /* Media queries */
+
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+    .student-discount {
+        font-size: 1rem;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
@@ -198,29 +212,5 @@ ul ,li {
     /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
-    }
-}
-
-
-/*event*/
-/*tablets devices and up*/
-@media screen and (min-width:768px){
-
-    #event{
-        min-height: 400px;
-    }
-}
-/*large devices and up*/
-@media screen and (min-width:1200px){
-
-    #event{
-        min-height: 220px;
-    }
-}
-/*extra large devices and up*/
-@media screen and (min-width:1400px){
-
-    #event{
-        min-height:195px;
     }
 }
