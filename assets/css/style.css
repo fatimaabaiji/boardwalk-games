@@ -16,21 +16,30 @@ h3{
     font-family: var(--secondary-font);
     color:var(--primary-color)
 }
-h2{
-    margin-bottom: 2rem;
-}
+
 h1,h2{
     text-transform: uppercase;
+}
+h2{
+    margin-bottom: 2rem;
 }
 .sub-heading-color{
     color:var(--highlight-color);
 }
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*navbar*/
 #navbar{
     background-color:var(--primary-color);
 }
 #navbar .logo{
     width: 30px;
 }
+
+/*header*/
 #header .lead{
     font-family: var(--secondary-font);
 }
@@ -43,11 +52,28 @@ h1,h2{
 #services .card{
     margin-bottom: 1,5rem;
 }
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+/* grid visualisation CSS for testing */
+
+/* .container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
+} */
+
+
 /*medium devices (tablets 786px and up)*/
 @media screen and (min-width:786px) {
     /*make all services cards the same height for consistency*/
-    #services .card {
-        min-height: 19px;
+    #services .card-body {
+        min-height: 191px;
     }
     
 }
