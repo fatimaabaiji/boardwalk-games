@@ -16,7 +16,13 @@ h3{
     font-family: var(--secondary-font);
     color:var(--primary-color)
 }
-.sub-heading{
+h2{
+    margin-bottom: 2rem;
+}
+h1,h2{
+    text-transform: uppercase;
+}
+.sub-heading-color{
     color:var(--highlight-color);
 }
 #navbar{
@@ -24,4 +30,48 @@ h3{
 }
 #navbar .logo{
     width: 30px;
+}
+#header .lead{
+    font-family: var(--secondary-font);
+}
+/*services*/
+#section .card-footer{
+    font-weight: bold;
+    color:var(--highlight-color);
+    background-color: transparent;
+}
+#services .card{
+    margin-bottom: 1,5rem;
+}
+/*medium devices (tablets 786px and up)*/
+@media screen and (min-width:786px) {
+    /*make all services cards the same height for consistency*/
+    #services .card {
+        min-height: 19px;
+    }
+    
+}
+/*larger devices (laptops and up)*/
+@media screen and (min-width: 992) {
+    /*make all services cards the same height for consistency*/
+    #services .card {
+        min-height: auto;
+    }
+    
+}
+/*larger devices (desktop and up)*/
+@media screen and (min-width: 1200px) {
+    /*make all services cards the same height for consistency*/
+    #services .card {
+        min-height: 220px;
+    }
+    
+}
+/*extra large devices */
+@media screen and (min-width: 1400px) {
+    /*make all services cards the same height for consistency*/
+    #services .card {
+        min-height: 395px;
+    }
+    
 }
